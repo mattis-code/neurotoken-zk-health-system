@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+*.swp
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+
+# Python cache (in case you add scripts later)
+__pycache__/
+*.pyc
