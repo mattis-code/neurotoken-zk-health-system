@@ -1,4 +1,4 @@
-# NeuroToken ZK Health System™ – Conceptual Repository
+[OVERVIEW.md](https://github.com/user-attachments/files/24034879/OVERVIEW.md)# NeuroToken ZK Health System™ – Conceptual Repository
 
 **Status:** Early conceptual / research stage  
 **Environment:** Documentation only – no production code, no live patient data, no tokens issued.
@@ -12,13 +12,14 @@ This repository contains exploratory documentation for a privacy-preserving, out
 Nothing in this repository constitutes medical advice, investment advice, or a commitment to launch any financial instrument or token.
 
 ## Important documents
+[Uploading OV[DISCLAIMER.md](https://github.com/user-attachments/files/24034880/DISCLAIMER.md)[ARCHITECTURE.md](https://github.com/user-attachments/files/24034886/ARCHITECTURE.md)
+[TOKEN_MODEL.md](https://github.com/user-attachments/files/24034885/TOKEN_MODEL.md)
+[ZK_ENGINE.md](https://github.com/user-attachments/files/24034884/ZK_ENGINE.md)
+[SECURITY_PRIVACY.md](https://github.com/user-attachments/files/24034883/SECURITY_PRIVACY.md)
+[GOVERNANCE.md](https://github.com/user-attachments/files/24034882/GOVERNANCE.md)
+[ROADMAP.md](https://github.com/user-attachments/files/24034881/ROADMAP.md)
+ERVIEW.md…]()
 
-- [OVERVIEW.md](OVERVIEW.md) – Concept and high-level intent  
-- [ARCHITECTURE.md](ARCHITECTURE.md) – Conceptual system architecture  
-- [ZK_ENGINE.md](ZK_ENGINE.md) – ZK-based progress and proof engine  
-- [TOKEN_MODEL.md](TOKEN_MODEL.md) – Draft incentive / token interaction model  
-- [SECURITY_PRIVACY.md](SECURITY_PRIVACY.md) – Security, privacy and GDPR principles  
-- [GOVERNANC# System Architecture (High Level)
 
 Layers:
 
