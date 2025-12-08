@@ -12,7 +12,8 @@ This repository contains exploratory documentation for a privacy-preserving, out
 Nothing in this repository constitutes medical advice, investment advice, or a commitment to launch any financial instrument or token.
 
 ## Important documents
-[Uploading OV[DISCLAIMER.md](https://github.com/user-attachments/files/24034880/DISCLAIMER.md)[ARCHITECTURE.md](https://github.com/user-attachments/files/24034886/ARCHITECTURE.md)
+[Uploading OV[DISCLAIMER.md](https://github.com/user-attachments/files/24034880/DISCLAIMER.md)[ARCHITECTURE.md](
+https://github.com/user-attachments/files/24034886/ARCHITECTURE.md)
 [TOKEN_MODEL.md](https://github.com/user-attachments/files/24034885/TOKEN_MODEL.md)
 [ZK_ENGINE.md](https://github.com/user-attachments/files/24034884/ZK_ENGINE.md)
 [SECURITY_PRIVACY.md](https://github.com/user-attachments/files/24034883/SECURITY_PRIVACY.md)
