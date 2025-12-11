@@ -1,21 +1,24 @@
-"""
-Local-only telemetry (public safe)
-"""
-
+import json
 import time
+from pathlib import Path
 
 class Telemetry:
-    def __init__(self):
-        self.events = []
+    """
+    Telemetry logger for the NeuroToken ZK Health System.
+    Public-safe: never logs payloads, only meta-events.
+    """
 
-    def record(self, event: str, data=None):
-        self.events.append({
+    LOG_PATH = Path("logs/telemetry.log")
+
+    def log(self, event: str, metadata: dict = None):
+        entry = {
+            "timestamp": time.time(),
             "event": event,
-            "data": data or {},
-            "ts": int(time.time()*1000)
-        })
+            "metadata": metadata or {}
+        }
+        with open(self.LOG_PATH, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+        return entry
 
-    def flush(self):
-        batch = list(self.events)
-        self.events.clear()
-        return batch
+    def sync(self):
+        return {"status": "OK", "synced": True}

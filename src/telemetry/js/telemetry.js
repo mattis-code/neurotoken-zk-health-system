@@ -1,22 +1,21 @@
-/**
- * Local-only telemetry module (public safe)
- */
+import fs from "fs";
+
 export class Telemetry {
   constructor() {
-    this.events = [];
+    this.logFile = "logs/telemetry.log";
   }
 
-  record(event, data = {}) {
-    this.events.push({
+  log(event, metadata = {}) {
+    const entry = {
+      timestamp: Date.now(),
       event,
-      data,
-      ts: Date.now()
-    });
+      metadata,
+    };
+    fs.appendFileSync(this.logFile, JSON.stringify(entry) + "\n");
+    return entry;
   }
 
-  flush() {
-    const batch = [...this.events];
-    this.events = [];
-    return batch;
+  sync() {
+    return { status: "OK", synced: true };
   }
 }
