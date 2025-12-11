@@ -1,3 +1,6 @@
-import { NeuroTokenClient } from "../../src/sdk/js/client.js"
-const client = new NeuroTokenClient({ endpoint: "http://localhost" })
-console.log(client.submitProgress({ score: 10 }))
+import { createProgressProof, validateProgressProof } from "../../sdk/js/client.js";
+
+const demo = createProgressProof({ session: 1 });
+console.log("Generated proof:", demo);
+
+console.log("Valid:", validateProgressProof(demo));
