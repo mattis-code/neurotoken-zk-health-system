@@ -1,2 +1,2 @@
-# Dataflow Overview  
-Architecture for zero-knowledge validated neuro-progress proofs.
+# Dataflow  
+Complete description of non-clinical progress data → hashing → ZK proof generation…

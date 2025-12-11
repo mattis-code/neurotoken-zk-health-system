@@ -1,2 +1,2 @@
 # Architecture Overview  
-Layered architecture for BHBR, BHT and ZK Light Engine.
+This document describes the layered architecture for NeuroToken ZK Health System™…
