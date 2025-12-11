@@ -14,3 +14,10 @@ Includes:
 - Compliance docs
 - Developer onboarding
 - Full CI/CD pipeline
+
+---
+
+## 📘 Developer Documentation  
+Available at:  
+**https://mattis-code.github.io/neurotoken-zk-health-system/**
+
