@@ -1,0 +1,10 @@
+{
+  "source": {
+    "include": ["src", "sdk", "zk_engine"]
+  },
+  "opts": {
+    "destination": "docs/api/auto/js",
+    "recurse": true,
+    "readme": "README.md"
+  }
+}
