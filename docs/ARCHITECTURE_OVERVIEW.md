@@ -1,2 +1,2 @@
-# ARCHITECTURE_OVERVIEW.md
-Placeholder content for ARCHITECTURE_OVERVIEW.md.
+# Architecture Overview  
+Layered architecture for BHBR, BHT and ZK Light Engine.

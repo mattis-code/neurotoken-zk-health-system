@@ -1,0 +1,4 @@
+FUNCTION GenerateProof(input):
+    hashed = HASH(input)
+    commitment = PEDERSEN_COMMIT(hashed)
+    RETURN commitment
