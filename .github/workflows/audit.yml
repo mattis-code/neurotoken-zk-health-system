@@ -1,0 +1,22 @@
+name: Security Audit (npm + pip)
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node audit
+        run: |
+          npm install
+          npm audit --audit-level=moderate || true
+
+      - name: Python audit
+        run: |
+          pip install pip-audit || true
+          pip-audit || true
