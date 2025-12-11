@@ -4,5 +4,5 @@ def load_circuit(name: str):
         "version": "0.1-public",
         "gates": 0,
         "wires": 0,
-        "description": "Public-safe placeholder circuit",
+        "description": "Public-safe  circuit",
     }

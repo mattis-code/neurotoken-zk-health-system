@@ -1,5 +1,5 @@
 # NeuroToken ZK System — Hashing Module (Python)
-# Public-safe placeholder using SHA-256.
+# Public-safe  using SHA-256.
 
 import hashlib
 

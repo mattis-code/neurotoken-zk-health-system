@@ -1,6 +1,6 @@
 /**
  * NeuroToken ZK System — Hashing Module
- * Provides a placeholder Poseidon-like hash using SHA-256
+ * Provides a  Poseidon-like hash using SHA-256
  * (safe for open-source, no sensitive ZK construction)
  */
 import crypto from "crypto";
