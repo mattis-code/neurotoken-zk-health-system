@@ -7,3 +7,19 @@
 </p>
 
 # NeuroToken ZK Health System – Structured Placeholder Build
+
+---
+
+## 📄 Whitepapers (Public-Safe)
+
+These documents describe the high-level design of the Lionking HealthTech ecosystem without revealing non-public IP or patented architecture.
+
+- **BHBR — Brain Health Bitcoin Reserve™**  
+  *whitepapers/BHBR_Whitepaper_v1.1.md*
+
+- **BHT — Brain Health Token™**  
+  *whitepapers/BHT_Whitepaper_v1.1.md*
+
+- **NeuroToken ZK — Light Technical Whitepaper v1.0**  
+  *whitepapers/NeuroToken_ZK_Light_Whitepaper_v1.0.md*
+
