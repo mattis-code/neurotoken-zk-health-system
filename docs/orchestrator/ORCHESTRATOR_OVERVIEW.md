@@ -1,10 +1,13 @@
-# ZK Orchestrator — Overview
+# NeuroToken ZK Health System — Orchestrator Layer
 
-The orchestrator coordinates:
-- serialization
-- hashing
-- proof envelope generation
-- domain → ZK bridging
-- multi-language output parity
+The Orchestrator is the integration hub of the system.  
+It coordinates:
+- hashing pipeline  
+- serialization pipeline  
+- domain validation  
+- ZK light flow (future)
+- sync  
+- telemetry  
+- BHBR/BHT readiness
 
-All logic is public-safe.
+It exposes a stable API for external developers.
