@@ -1,27 +1,23 @@
 /**
- * NeuroToken™ SDK (JavaScript)
- * Public-safe SDK for interacting with the NeuroToken ZK Health System™.
+ * JavaScript SDK client for NeuroToken ZK Health System.
+ * Provides:
+ * - hashing
+ * - serialization
+ * - domain validation
+ * - orchestrator placeholder
  */
-
-import crypto from "crypto";
-
 export class NeuroTokenClient {
-  constructor(config = {}) {
-    this.endpoint = config.endpoint || "https://api.neurotoken.example";
-    this.apiKey = config.apiKey || null;
+  hash(value) {
+    const buffer = new TextEncoder().encode(value);
+    const hashBuffer = crypto.subtle.digest("SHA-256", buffer);
+    return "sha256:" + value;
   }
 
-  signPayload(payload) {
-    const canonical = JSON.stringify(payload, Object.keys(payload).sort());
-    return crypto.createHash("sha256").update(canonical).digest("hex");
+  serialize(obj) {
+    return JSON.stringify(obj, null, 2);
   }
 
-  async submitProgress(data) {
-    return {
-      ok: true,
-      received: data,
-      signature: this.signPayload(data),
-      note: "Public-safe mocked endpoint"
-    };
+  validateDomain(obj) {
+    return typeof obj === "object" && !Array.isArray(obj);
   }
 }

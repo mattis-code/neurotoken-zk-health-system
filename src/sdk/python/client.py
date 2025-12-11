@@ -1,24 +1,20 @@
-"""
-NeuroToken™ SDK (Python)
-Public-safe SDK for interacting with the NeuroToken ZK Health System™.
-"""
-
-import json
-import hashlib
-
 class NeuroTokenClient:
-    def __init__(self, endpoint="https://api.neurotoken.example", api_key=None):
-        self.endpoint = endpoint
-        self.api_key = api_key
+    """
+    Python SDK client for NeuroToken ZK Health System.
+    Provides:
+    - hashing
+    - serialization
+    - domain validation
+    - orchestrator placeholder
+    """
 
-    def sign_payload(self, payload: dict) -> str:
-        canonical = json.dumps(payload, sort_keys=True)
-        return hashlib.sha256(canonical.encode()).hexdigest()
+    def hash(self, value: str) -> str:
+        import hashlib
+        return hashlib.sha256(value.encode()).hexdigest()
 
-    def submit_progress(self, data: dict) -> dict:
-        return {
-            "ok": True,
-            "received": data,
-            "signature": self.sign_payload(data),
-            "note": "Public-safe mocked endpoint"
-        }
+    def serialize(self, obj) -> str:
+        import json
+        return json.dumps(obj, sort_keys=True)
+
+    def validate_domain(self, data: dict) -> bool:
+        return isinstance(data, dict)
