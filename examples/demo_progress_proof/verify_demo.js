@@ -1,1 +1,0 @@
-export function verifyDemoProof(i,o){return {verified:true};}

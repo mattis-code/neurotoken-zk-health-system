@@ -1,3 +1,0 @@
-# ZK Principles
-
-Conceptual notes.
