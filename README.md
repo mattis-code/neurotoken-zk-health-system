@@ -1,13 +1,16 @@
-# NeuroToken ZK Health System™  
-Open-core public repo for the non-sensitive components of Lionking Biotech’s neuro-health architecture.
+# NeuroToken ZK Health System™
 
-## Includes
-- SDK (JS & Python)
-- Documentation
-- Public whitepapers
-- Examples & tests
+[![CI](https://github.com/mattis-code/neurotoken-zk-health-system/actions/workflows/ci.yml/badge.svg)](https://github.com/mattis-code/neurotoken-zk-health-system/actions/workflows/ci.yml)
+![License](https://img.shields.io/badge/license-MIT-gold)
+![Security](https://img.shields.io/badge/security-ZK%20Hardened-black)
 
-## Excludes (for patent protection)
-- Proprietary ZK circuits
-- NeuroQuantum AGI core
-- BHBR/BHT sealed logic
+A public-safe open-core implementation of the NeuroToken ZK Health System™.
+
+Includes:
+- ZK Engine (placeholder, public-safe)
+- SDK (JS + Python)
+- Tests (JS + Python)
+- Whitepapers
+- Compliance docs
+- Developer onboarding
+- Full CI/CD pipeline

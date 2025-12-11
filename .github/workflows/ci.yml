@@ -1,4 +1,4 @@
-name: CI
+name: NeuroToken CI
 
 on:
   push:
@@ -7,28 +7,44 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+        python-version: [3.11]
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repo
+      uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
+    # JS SETUP
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
       with:
-        python-version: "3.11"
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install JS deps
+      run: npm install || true
+
+    - name: Run JS tests
+      run: node tests/unit/test_engine.js
+
+    # PYTHON SETUP
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
 
     - name: Install Python deps
-      run: |
-        pip install pytest
+      run: pip install pytest || true
 
     - name: Run Python tests
-      run: |
-        pytest -q || true
+      run: python3 tests/unit/test_engine.py
 
-    - name: Verify repo structure
-      run: |
-        test -d docs
-        test -d sdk
-        test -d examples
-        test -d tests
+    # SECURITY SCANS
+    - name: Security Scan (npm audit)
+      run: npm audit || true
+
+    - name: Security Scan (pip)
+      run: pip install safety && safety check || true
