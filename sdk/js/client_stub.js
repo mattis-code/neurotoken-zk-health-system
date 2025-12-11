@@ -1,0 +1,1 @@
+export function submitProgress(p){return {status:'received'}}

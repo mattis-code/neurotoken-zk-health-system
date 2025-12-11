@@ -1,0 +1,1 @@
+export const serialize=o=>JSON.stringify(o,null,2);
